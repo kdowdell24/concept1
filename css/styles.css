@@ -166,7 +166,7 @@ textarea {
 	height: 10em;
 }
 
-button {
+#submit-button {
 	background-color: #214261;
 	color: #faf7eb;
 	text-decoration: none;
@@ -175,7 +175,7 @@ button {
 	border-radius: 2em;
 }
 
-button:hover {
+#submit-button:hover {
 	background-color: #dbbd7f;
 }
 
