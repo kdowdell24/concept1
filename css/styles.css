@@ -1,11 +1,12 @@
-/*Color palette
+																/*COLOR PALETTE*/
+/***************************************************************************//*
+
 blue: #214261
 beige: #faf7eb
 gold: #dbbd7f
 
-*/
 
-														/*MIN-WIDTH 700px*/
+*/														/*MIN-WIDTH 800px*/
 /***************************************************************************/
 
 /*Media Queries*/
@@ -74,7 +75,7 @@ gold: #dbbd7f
 	}
 }
 
-										/*MIN-WIDTH 700px*/
+															/*MIN-WIDTH 700px*/
 /***************************************************************************/
 
 @media only screen and (min-width: 700px) {
@@ -185,11 +186,10 @@ html {
 
 body {
 	font-family: Helvetica;
-	color: beige;
 	padding: 2rem;
 }
 
-h1, ul, footer {
+ul, footer, header {
 	text-align: center;
 }
 
@@ -197,9 +197,7 @@ h1, ul, footer {
 /***************************************************************************/
 
 header {
-	grid-column: 1/13;
 	grid-row: 1;
-	text-align: center;
 }
 
 header, section, aside, footer {
@@ -228,12 +226,10 @@ header img {
 
 .beige-bg {
 	background-color: #faf7eb;
-	color: #214261;
 }
 
 .gold-bg {
 	background-color: #dbbd7f;
-	color: #214261;
 }
 
 .blue-button {
@@ -251,6 +247,9 @@ header img {
 
  .gold-bg .blue-button:hover {
 	background-color: #faf7eb;
+}
+
+.beige-bg, .gold-bg, .gold-bg .blue-button:hover {
 	color: #214261;
 }
 
