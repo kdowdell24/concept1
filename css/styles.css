@@ -5,9 +5,10 @@ gold: #dbbd7f
 
 */
 
+														/*MIN-WIDTH 700px*/
+/***************************************************************************/
+
 /*Media Queries*/
-
-
 
 @media only screen and (min-width: 800px) {
 
@@ -18,11 +19,11 @@ gold: #dbbd7f
 	section {
 		padding: 2em;
 	}
-	
+
 	aside ul {
 		text-align: center;
 	}
-	
+
 	ul li {
 		display: block;
 		margin: 0.5em 0;
@@ -67,18 +68,21 @@ gold: #dbbd7f
 		grid-column: 7/13;
 		grid-row: 6;
 	}
-	
+
 	body section form button {
 		width: 100%;
-	}	
+	}
 }
+
+										/*MIN-WIDTH 700px*/
+/***************************************************************************/
 
 @media only screen and (min-width: 700px) {
 
 	input #email {
 		width: 50%;
 	}
-	
+
 	ul li {
 		margin: 0.5em 1em;
 	}
@@ -95,20 +99,62 @@ gold: #dbbd7f
 	form .form-all-columns {
 		grid-column: 1/3;
 	}
-	
+
 	section form button {
 		width: 60%;
-	}	
+	}
+
+	/*Header*/
+
+	header .big-circle-container, body header img  {
+		display: inline-block;
+	}
+
+	header .header-content {
+		position: relative;
+		bottom: 25em;
+		max-width: 50%;
+		word-wrap: break-word;
+		margin: 0 auto;
+	}
+
+	header .big-circle-container {
+		width: 100%;
+		height: 40em;
+		overflow: hidden;
+		position: relative;
+		animation-name: rotate;
+    animation-duration:         20s;
+    animation-iteration-count:  infinite;
+    animation-timing-function: linear;
+		margin: 0 auto;
+	}
+
+	body header img {
+		position: absolute;
+		transform: translate(-50%, 5%);
+	}
+
+	@keyframes rotate {
+	  from {
+	    transform: rotate(0deg);
+	  }
+	  to {
+	    transform: rotate(360deg);
+	  }
+	}
 }
+																/*MIN-WIDTH 1400px*/
+/***************************************************************************/
 
 @media only screen and (min-width: 1400px) {
 	#contact-form button {
 		width: 60%;
-	}	
+	}
 }
 
-
-/*Global Styles*/
+															/*GLOBAL STYLES*/
+/***************************************************************************/
 
 html {
 	-webkit-background-size: cover;
@@ -147,6 +193,49 @@ h1, ul, footer {
 	text-align: center;
 }
 
+																/*GRID LAYOUTS*/
+/***************************************************************************/
+
+header {
+	grid-column: 1/13;
+	grid-row: 1;
+	text-align: center;
+}
+
+header, section, aside, footer {
+	padding: 3em;
+	grid-column: 1/13;
+}
+
+																/*HEADER SECTION*/
+/***************************************************************************/
+
+.header-content {
+	position: static;
+}
+
+.big-circle-container  {
+	display: none;
+}
+
+header img {
+	max-width: 100%;
+}
+
+
+															/*SECTION COLORS*/
+/***************************************************************************/
+
+.beige-bg {
+	background-color: #faf7eb;
+	color: #214261;
+}
+
+.gold-bg {
+	background-color: #dbbd7f;
+	color: #214261;
+}
+
 .blue-button {
 	background-color: #214261;
 	color: #faf7eb;
@@ -165,33 +254,8 @@ h1, ul, footer {
 	color: #214261;
 }
 
-/*Grid Layouts*/
-
-header {
-	grid-column: 1/13;
-	grid-row: 1;
-	text-align: center;
-}
-
-header, section, aside, footer {
-	padding: 3em;
-	grid-column: 1/13;
-}
-
-
-/*Section colors*/
-
-.beige-bg {
-	background-color: #faf7eb;
-	color: #214261;
-}
-
-.gold-bg {
-	background-color: #dbbd7f;
-	color: #214261;
-}
-
-/*Social Media*/
+													/*SOCIAL MEDIA SECTION*/
+/***************************************************************************/
 
 #social-media h2 {
 	text-align: center;
@@ -216,7 +280,8 @@ li {
 }
 
 
-/*Form*/
+															/*CONTACT FORM*/
+/***************************************************************************/
 
 form {
 	display: grid;
@@ -248,5 +313,5 @@ input, textarea {
 }
 
 
-/*Footer*/
-
+															/*FOOTER*/
+/***************************************************************************/
