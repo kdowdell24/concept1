@@ -6,12 +6,12 @@ beige: #faf7eb
 gold: #dbbd7f
 
 
-*/														/*MIN-WIDTH 800px*/
+*/														/*MIN-WIDTH 900px*/
 /***************************************************************************/
 
 /*Media Queries*/
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
 
 	body {
 		font-size: 22px;
@@ -179,7 +179,7 @@ html {
 
 .container {
 	display: grid;
-	grid-template-columns: repeat(12,1fr);
+	grid-template-columns: repeat(auto-fill, (12,1fr));
 	grid-auto-rows: auto;
 	grid-gap: 1em;
 }
